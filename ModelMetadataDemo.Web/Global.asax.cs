@@ -30,7 +30,7 @@ namespace ModelMetadataDemo.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(false, typeof (Resource));
+            ModelMetadataProviders.Current = new ConventionalModelMetadataProvider(true, typeof (Resource));
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
